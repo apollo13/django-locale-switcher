@@ -13,5 +13,5 @@ def locale_switcher(request):
     for (lang_code, _), lang_name in zip(settings.LANGUAGES, lang_names):
         with translation.override(lang_code):
             url = reverse(info[0], args=info[1], kwargs=info[2])
-            data['locale_switcher'].append(locale_info(lang_code, lang_name, url, False))
+            data['locale_switcher'].append(locale_info(lang_code, lang_name, url, lang_code == request.LANGUAGE_CODE))
     return data
