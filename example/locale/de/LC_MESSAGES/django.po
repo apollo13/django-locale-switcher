@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-18 04:48-0500\n"
-"PO-Revision-Date: 2012-09-18 11:48+0100\n"
+"POT-Creation-Date: 2012-09-18 04:56-0500\n"
+"PO-Revision-Date: 2012-09-18 11:56+0100\n"
 "Last-Translator: Florian Apolloner <apollo13@apolloner.eu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -28,6 +28,10 @@ msgstr "Englisch"
 #: urls.py:11
 msgid "^homepage/$"
 msgstr "^startseite/$"
+
+#: urls.py:12
+msgid "^homepage2/(?P<data>\\d+)/$"
+msgstr "^startseite2/(?P<data>\\d+)/$"
 
 #: templates/test.html:6
 msgid "This page in:"

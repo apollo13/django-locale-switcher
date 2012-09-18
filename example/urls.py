@@ -9,6 +9,7 @@ from django.utils.translation import ugettext_lazy as _
 urlpatterns = i18n_patterns('',
     # Examples:
     url(_(r'^homepage/$'), 'example.views.home', name='test'),
+    url(_(r'^homepage2/(?P<data>\d+)/$'), 'example.views.home', name='test'),
     # url(r'^example/', include('example.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
