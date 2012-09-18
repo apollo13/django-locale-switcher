@@ -1,0 +1,13 @@
+{% load i18n %}
+<html>
+  <head>
+  </head>
+  <body>
+    {{ _('This page in:') }}
+    <ul>
+    {% for lang_info in locale_switcher %}
+      <li><a href="{{ lang_info.url }}">{{ lang_info.language_name }}</a></li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
