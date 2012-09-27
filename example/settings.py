@@ -98,7 +98,6 @@ TEMPLATE_LOADERS = (
 TEMPLATE_CONTEXT_PROCESSORS = ('locale_switcher.context_processors.locale_switcher',)
 
 MIDDLEWARE_CLASSES = (
-    'locale_switcher.middleware.LocaleSwitcherMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
